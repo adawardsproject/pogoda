@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import Navigation from './components/Navigation';
 import Weather from './components/Weather';
+import Forecast from './components/Forecast';
+import Map from './components/Map';
 
 
 const Api_Key = "4142b41eca5d3f80b36e3771483ffdc1";
@@ -25,6 +27,8 @@ class App extends Component {
       <div className="App">
         <Navigation />
         <Weather />
+        <Forecast />
+        <Map />
 
       </div>
     );

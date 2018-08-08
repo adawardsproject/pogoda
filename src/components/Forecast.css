@@ -1,0 +1,36 @@
+.OrangeLine {
+    background-color: #ffc43c;
+
+}
+
+.Margin {
+    margin-left: 25%;
+    padding: 20px;
+
+}
+.ForecastParagraph {
+    display: inline-block;
+    font-family: "Poppins";
+    font-weight: 400;
+    line-height: 28.65px;
+    color: #15619c;
+    float: left;
+    margin-left: 10px;
+    margin-right: 10px;
+    text-decoration: none;
+}
+.ForecastParagraphSpan {
+    display: inline-block;
+    font-family: "Poppins";
+    font-weight: 700;
+    line-height: 28.65px;
+    color: #15619c;
+    float: left;
+    text-decoration: none;
+}
+.List {
+    list-style-type: none ;
+    margin-left: 25%;
+    padding: 20px 20px 45px 20px;
+
+}

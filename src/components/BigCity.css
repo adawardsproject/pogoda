@@ -1,0 +1,28 @@
+.CityHeader {
+    text-shadow: 0 3px 6px rgba(27, 69, 131, 0.19);
+    color: #ffffff;
+    font-weight: 500;
+    line-height: 56px;
+    margin-top: 0;
+}
+.Paragraph {
+    height: 16px;
+    color: #ffffff;
+    font-size: 18px;
+    line-height: 46.92px;
+    font-weight: 300;
+}
+.ParagraphDetails {
+    height: 16px;
+    color: #ffffff;
+    font-size: 18px;
+    line-height: 46.92px;
+    font-weight: 300;
+    float:left;
+}
+.Margin {
+    margin:30px 0;
+}
+.BorderRight {
+ border-right: 1px solid #fff;
+}
