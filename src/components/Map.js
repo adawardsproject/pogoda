@@ -3,6 +3,7 @@ import image from '../img/poland-map.png';
 import { Row } from 'react-bootstrap';
 import { Col } from 'react-bootstrap';
 import { Grid } from 'react-bootstrap';
+import Example from "./DatePicker";
 
 
 
@@ -27,7 +28,8 @@ class Map extends React.Component {
                     <div  style = { sectionStyle }></div>
                 </Col>
                 <Col xs={12} md={3}>
-             
+                <Example/>
+          
         
                 </Col>
             </Row>
