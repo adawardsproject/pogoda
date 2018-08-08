@@ -1,0 +1,21 @@
+.NavbarDefault {
+    background-image: none ;
+    background-color: #fff ;
+    box-shadow: none;
+    border: none;
+    color: #cccccc;
+    font-size: 13px;
+    line-height: 24px;
+    text-transform: uppercase;
+    padding: 50px 0;
+}
+.NavbarFont {
+    font-family: 'Poppins', sans-serif;
+    color: #cccccc;
+    font-size: 13px;
+    line-height: 24px;
+    text-transform: uppercase;
+}
+.NavbarBrand {
+    padding: 0 50px 0 0 !important;
+}

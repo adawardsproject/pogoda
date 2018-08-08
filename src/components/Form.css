@@ -1,0 +1,11 @@
+.Form {
+    box-shadow: 0 3px 6px rgba(27, 69, 131, 0.19);
+    width: 500px;
+    border: none;
+    height: 50px;
+    padding-left: 10px;
+}
+.Div {
+    display: flex;
+    align-items: center;
+}
