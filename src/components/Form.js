@@ -6,7 +6,7 @@ class Form extends React.Component{
   render() {
   return (
       <div  className={classes.Div}>
-      <form onSubmit={this.props.loadWeather}>
+      <form onSubmit={this.props.getWeather}>
         <input type="text" name="city" placeholder="Gdzie się jutro wybierasz?"   className={classes.Form}  />
         <button>Get Weather</button>
       
