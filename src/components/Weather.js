@@ -26,14 +26,15 @@ var rowStyle = {
 
 
 
-class Weather extends React.Component {
-    render() {
+const Weather = (props) => {
+ 
         return (
             <section style = { sectionStyle }>
             <Grid>
                 <Row className="show-grid">
                     <Col xs={12} md={3} mdOffset={1}>
-                        <p className={classes.Paragraph}>Sprawdź pogodę w swoim mieście</p>
+
+                   <p> {props.city}</p>
                     </Col>
                     <Col xs={12} md={3}>
                     <Form loadWeather={this.getWeather} />
@@ -45,7 +46,9 @@ class Weather extends React.Component {
                        <BigCity/>
                     </Col>
                     <Col xs={12} md={4}>
-                      <WeatherDetails/>
+                      <WeatherDetails
+                 
+                      />
                     </Col>
                     <Col xs={12} md={3}>
                      <Tomorrow/>
@@ -58,7 +61,7 @@ class Weather extends React.Component {
         </section>
         )
     }
-}
+
 
 
 

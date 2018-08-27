@@ -15,13 +15,13 @@ var style = {
 }
 
 
-class Form extends React.Component{
+class AirForm extends React.Component{
   render() {
   return (
       <div  className={classes.Div}>
-      <form onSubmit={this.props.getWeather}>
+      <form onSubmit={this.props.getAir}>
         <input type="text" name="city" placeholder="Gdzie się jutro wybierasz?"   className={classes.Form}  />
-        <button style = {style}>Pobierz pogodę</button>
+        <button style = {style}>Pobierz stan powietrza</button>
       
       
       </form>
@@ -33,4 +33,4 @@ class Form extends React.Component{
   )
 }
 }
-export default Form;
+export default AirForm;

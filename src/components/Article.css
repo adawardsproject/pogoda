@@ -1,0 +1,54 @@
+.Background {
+    background-image: url("../img/weather-1.png");
+    height: 150px;
+    width:250px;
+}
+.Background2 {
+    background-image: url("../img/weather-2.png");
+    height: 150px;
+    width:250px;
+}
+.Background3 {
+    background-image: url("../img/weather-3.png");
+    height: 150px;
+    width:250px;
+}
+.Background4 {
+    background-image: url("../img/weather-4.png");
+    height: 150px;
+    width:250px;
+}
+.Background5 {
+    background-image: url("../img/weather-5.png");
+    height: 150px;
+    width:250px;
+}
+.Background6 {
+    background-image: url("../img/weather-6.png");
+    height: 150px;
+    width:250px;
+}
+.Header {
+    color: #1563a0;
+    font-size: 15px;
+    font-weight: 500;
+    text-align: justify;
+    margin-top: 10px;
+}
+.Paragraph {
+    font-size: 14px;
+    color: #807f7f;
+    font-weight: 300;
+    text-align:justify;
+    line-height: 24px;
+}
+.More {
+    background-color: #ffc43c;
+    width: 192px;
+    height: 39px;
+    border: none;
+   color: #1563a0;
+   font-size: 13px;
+   font-weight: 500;
+
+}

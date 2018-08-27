@@ -3,11 +3,12 @@ import classes from './BigCity.css';
 import Time from './Date.js';
 
 
-class BigCity extends React.Component {
-    render() {
+const BigCity = (props) =>{
+  
         return (
             <div>
-                  {this.props.city && <p>Miasto: {this.props.city}</p>}
+                  {props.city && <p>Miasto: {props.city}</p>}
+                  {props.temperature && <p>Temperatura: {props.temperature} °C</p>}
                 <h1 className={classes.CityHeader}>KOŁOBRZEG </h1>
 
                 <p className={classes.Paragraph}>Dzisiaj jest: <Time/></p>
@@ -22,7 +23,7 @@ class BigCity extends React.Component {
             </div>
         )
     }
-}
+
 
 
 export default BigCity;

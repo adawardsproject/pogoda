@@ -5,6 +5,8 @@ import Forecast from './components/Forecast';
 import Map from './components/Map';
 import Form from './components/Form';
 import WeatherDescription from './components/WeatherDescription';
+import Articles from './components/Articles';
+import BottomNav from './components/BottomNav';
 
 
 const Api_Key = "4142b41eca5d3f80b36e3771483ffdc1";
@@ -61,7 +63,15 @@ class App extends React.Component {
     return (
       <div className="App">
         <Navigation />
-        <Weather/>
+        <Weather
+            temperature={this.state.temperature}
+            city={this.state.city}
+            sunrise={this.state.sunUp}
+            sunset= {this.state.sunDown
+            }
+            realSunrise={this.state.realSunrise}
+            description={this.state.description}
+            error={this.state.error} />
         <WeatherDescription
            temperature={this.state.temperature}
            city={this.state.city}
@@ -77,6 +87,8 @@ class App extends React.Component {
         <Form getWeather={this.getWeather}/>
         <Forecast />
         <Map />
+        <Articles />
+        <BottomNav />
 
       </div>
     );

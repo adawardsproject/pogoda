@@ -4,6 +4,8 @@ import { Row } from 'react-bootstrap';
 import { Col } from 'react-bootstrap';
 import { Grid } from 'react-bootstrap';
 import Example from "./DatePicker";
+import WeatherList from "./WeatherList";
+import Air from "./Air";
 
 
 
@@ -29,9 +31,15 @@ class Map extends React.Component {
                 </Col>
                 <Col xs={12} md={3}>
                 <Example/>
+                <WeatherList/>
+           
           
         
                 </Col>
+                <Col xs={12} md={3}>
+                <Air/>
+                </Col>
+
             </Row>
         </Grid>
 
