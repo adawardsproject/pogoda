@@ -108,17 +108,6 @@ class Air extends React.Component {
 
                     </Grid>
 
-
-
-
-                       
-                  
-                       
-                        
-                       
-                    
-
-
             </div>
                     )
             

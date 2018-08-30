@@ -1,6 +1,6 @@
 import React from 'react';
 import classes from './Form.css';
-import Compass from './Compass';
+
 
 var style = {
   backgroundColor: "#ffc43c",
@@ -25,7 +25,7 @@ class AirForm extends React.Component{
       
       
       </form>
-      <Compass/>
+ 
     </div>
       
 

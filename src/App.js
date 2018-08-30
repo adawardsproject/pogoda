@@ -7,6 +7,7 @@ import Form from './components/Form';
 import WeatherDescription from './components/WeatherDescription';
 import Articles from './components/Articles';
 import BottomNav from './components/BottomNav';
+import Test from './components/Test';
 
 
 const Api_Key = "4142b41eca5d3f80b36e3771483ffdc1";
@@ -89,6 +90,7 @@ class App extends React.Component {
         <Map />
         <Articles />
         <BottomNav />
+        <Test />
 
       </div>
     );
