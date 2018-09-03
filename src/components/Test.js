@@ -6,9 +6,12 @@ class Test extends React.Component {
       super(props);
   
       this.state = {
-        selectedOption: '',
-        jsonList: [],
-      };
+        stationName: undefined,
+        cityName: undefined,
+     
+
+    }
+
     };
   
   
@@ -19,8 +22,8 @@ class Test extends React.Component {
             targetUrl = 'http://api.gios.gov.pl/pjp-api/rest/station/findAll'
         fetch(proxyUrl + targetUrl)
           .then(blob => blob.json())
-          .then(data => {
-            console.log(data);
+         .then(data => {
+          console.log(data);
        
            
           })
@@ -29,6 +32,7 @@ class Test extends React.Component {
           
           });
           }
+         
     render() {
         return <h1>Hi</h1>
       }

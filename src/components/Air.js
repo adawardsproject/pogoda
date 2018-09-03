@@ -9,9 +9,6 @@ import TileNO2 from "./TileNO2";
 import TileCO2 from "./TileCO2";
 import TileC6H6 from "./TileC6H6";
 import TileO3 from "./TileO3";
-import { Row } from 'react-bootstrap';
-import { Col } from 'react-bootstrap';
-import { Grid } from 'react-bootstrap';
 
 
 
@@ -25,88 +22,84 @@ var paragraphStyle = {
     fontSize: '16px',
     fontWeight: "300",
 }
+var row = {
+    display: "flex",
+    marginTop: "10px",
+    justifyContent:"space-between"
+}
 
 class Air extends React.Component {
     state = {
         stationName: undefined,
         cityName: undefined,
+     
 
     }
 
-    getAir = async (e) => {
 
 
-        e.preventDefault();
-        const stationId = e.target.elements.city.value;
+//  e.preventDefault();
+       // const stationId = e.target.elements.city.value;
+      
 
-        e.preventDefault();
+    componentDidMount() {
 
-        const api_call = await fetch(`http://api.gios.gov.pl/pjp-api/rest/station/sensors/${stationId}`);
+      
+        var proxyUrl = 'https://cors-anywhere.herokuapp.com/',
+        targetUrl = 'http://api.gios.gov.pl/pjp-api/rest/aqindex/getIndex/52'
+    fetch(proxyUrl + targetUrl)
+      .then(blob => blob.json())
+      .then(data => {
+        console.log(data);
+   
+       
+      })
+      .catch(e => {
+        console.log(e);
+      
+      });
+      
 
-        const response = await api_call.json();
-
-        console.log(response);
-
-        this.setState({
-            stationName: response.stationName,
-            cityName: response.city.name,
-
-            error: ""
-        })
+        
     }
     render() {
         return (
-            <div>
+            <div className="">
                 <p style={paragraphStyle}><span style={style}>Stan powietrza:</span> <Time /></p>
                 <AirForm getAir={this.getAir} />
-                <Grid>
-               
-                    <Col md={3}>
-                        <Row>
-                            <Col md={3}>
+                
+                         <div className="row d-flex" style={row}>
                                 <TileCondition />
 
-                            </Col>
-                            <Col md={3}>
+                        
                                 <TilePM10 />
 
-                            </Col>
-                            <Col md={3}>
+                       
+                   
                                 <TilePM25 />
-                            </Col>
-                            <Col md={3}>
+                       
+                       
                                 <TileSO2 />
+                            </div>
+                            <div className="row d-flex" style={row}>
 
-                            </Col>
-
-                        </Row>
-                    </Col>
-               
-                </Grid>
-                <Grid>
-                    <Col md={3}>
-                        <Row>
-                            <Col md={3}>
                                 <TileNO2 />
-                            </Col>
-                            <Col md={3}>
+                          
                                 <TileCO2 />
-                            </Col>
-                            <Col md={3}>
-                                <TileC6H6 />
-                            </Col>
-                            <Col md={3}>
+                     
+                    
+                                <TileC6H6  />
+                       
+                    
                                 <TileO3 />
-                            </Col>
-                        </Row>
-                    </Col>
+                            </div>
+                     
 
 
 
 
 
-
-                    </Grid>
+                  
 
             </div>
                     )

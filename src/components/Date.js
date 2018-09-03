@@ -5,11 +5,17 @@ class Time extends React.Component {
     constructor() {
         super();
 
-        var today = new Date(),
-            date = today.getFullYear() + '-' + (today.getMonth() + 1) + '-' + today.getDate();
+        var MyDate = new Date();
+        var MyDateString;
+        
+        MyDate.setDate(MyDate.getDate() );
+        
+        MyDateString = ('0' + MyDate.getDate()).slice(-2) + '.'
+                     + ('0' + (MyDate.getMonth()+1)).slice(-2) + '.'
+                     + MyDate.getFullYear();
 
         this.state = {
-            date: date
+            date: MyDateString
         };
     }
 

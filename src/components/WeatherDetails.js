@@ -29,9 +29,9 @@ const WeatherDetails = (props) => {
                 <img style={imgStyle} src={require("../img/burza.png")} />
             </div>
             <div className={classes.InLine}>
-                <p className={classes.Number}>23<sup className={classes.Sup} >°C</sup> </p>
-                <p className={classes.Paragraph}>Odczuwalna:      <p> {props.temperature}</p></p>
-                <p className={classes.Paragraph}>Spodziewane burze</p>
+                <p className={classes.Number}>{props.temperatureRound}<sup className={classes.Sup} >°C</sup> </p>
+                <p className={classes.Paragraph}>Odczuwalna: {props.wind_chill} °C</p>
+                <p className={classes.Paragraph}>{props.description}</p>
             </div>
             <div className={classes.Center}>
                 <button style={style} >Sczegóły pogody</button>

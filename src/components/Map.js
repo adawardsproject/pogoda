@@ -26,7 +26,7 @@ class Map extends React.Component {
         return (
             <Grid>
             <Row className="show-grid">
-                <Col xs={12} md={6} >
+                <Col xs={12} md={5} >
                     <div  style = { sectionStyle }></div>
                 </Col>
                 <Col xs={12} md={3}>
@@ -36,9 +36,9 @@ class Map extends React.Component {
           
         
                 </Col>
-                <Col xs={12} md={3}>
-                <Air/>
-                </Col>
+             
+                <Air className="col-md-4 col-sm-12"/>
+          
 
             </Row>
         </Grid>

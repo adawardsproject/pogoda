@@ -4,17 +4,18 @@ import Time from './Date.js';
 
 
 const BigCity = (props) =>{
+
+
   
         return (
             <div>
-                  {props.city && <p>Miasto: {props.city}</p>}
-                  {props.temperature && <p>Temperatura: {props.temperature} °C</p>}
-                <h1 className={classes.CityHeader}>KOŁOBRZEG </h1>
+                <h1 className={classes.CityHeader}>{props.city} </h1>
 
                 <p className={classes.Paragraph}>Dzisiaj jest: <Time/></p>
                 <div className={classes.Margin}>
-                    <p className={classes.Paragraph}>Wschód słońca: </p>
-                    <p className={classes.Paragraph}>Zachód słońca: </p>
+
+                <p className={classes.Paragraph}>Wschód słońca: {props.wschod} </p>
+                    <p className={classes.Paragraph}>Zachód słońca:  {props.zachod}</p>
 
                    
                 </div>

@@ -14,7 +14,7 @@ class Navigation extends React.Component {
             <Navbar className={classes.NavbarDefault} collapseOnSelect>
             <Navbar.Header>
               <Navbar.Brand className={classes.NavbarBrand}>
-                <a href="/"><img src={require("../img/pogoda-top.png")} /></a>
+           
               </Navbar.Brand>
               <Navbar.Toggle />
             </Navbar.Header>

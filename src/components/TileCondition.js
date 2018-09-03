@@ -5,15 +5,14 @@ var style = {
     height: '88px',
     borderRadius: '10px',
     backgroundColor:" #ff9600",
-    marginLeft: "-30px",
-    marginTop: "10px",
+    display: "inline-block"
   
 }
 var paragraphStyle = {
     fontSize: '10px',
     color: '#fff',
     textAlign: "center",
-    paddingTop:"14px",
+
 
 
 }
@@ -21,7 +20,7 @@ var paragraphStyle = {
 const TileCondition = () => {
 
     return (
-        <div style={style}>
+        <div style={style} className="col-md-3">
         <p style={paragraphStyle}> Stan<br/> powietrza: </p>
 
 

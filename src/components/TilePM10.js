@@ -5,8 +5,8 @@ var style = {
     height: '88px',
     borderRadius: '10px',
     backgroundColor:"#ffc43c",
-    marginRight: "10px",
-    marginTop: "10px"
+ 
+    display: "inline-block"
 }
 var paragraphStyle = {
     fontSize: '20px',
@@ -19,12 +19,11 @@ var dirt = {
     fontWeight: "400",
     color: "#fff",
     textAlign: "center",
-    paddingTop: "14px"
 }
 const TilePM10 = () => {
 
     return (
-        <div style={style}>
+        <div style={style} className="col-md-3">
                  <p style={paragraphStyle}> PM10 </p>
         <p style = {dirt}>Pył zawieszony</p>
 
