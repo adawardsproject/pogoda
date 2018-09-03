@@ -46,7 +46,7 @@ class Air extends React.Component {
 
       
         var proxyUrl = 'https://cors-anywhere.herokuapp.com/',
-        targetUrl = 'http://api.gios.gov.pl/pjp-api/rest/aqindex/getIndex/52'
+        targetUrl = 'http://api.gios.gov.pl/pjp-api/rest/station/findAll'
     fetch(proxyUrl + targetUrl)
       .then(blob => blob.json())
       .then(data => {

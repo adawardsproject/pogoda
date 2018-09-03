@@ -88,9 +88,9 @@ class Weather extends React.Component {
             error: ""
         })
     }
-    
-
+  
     render() {
+        
         return (
             <section style={sectionStyle}>
                 <Grid>
@@ -98,7 +98,8 @@ class Weather extends React.Component {
                         <Col xs={12} md={3} mdOffset={1}>
                         </Col>
                         <Col xs={12} md={3}>
-                            <Form getWeather={this.getWeather}
+                            <Form
+                            getWeather={this.getWeather}
                            />
                         </Col>
                     </Row>

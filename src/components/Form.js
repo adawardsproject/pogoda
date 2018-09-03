@@ -17,18 +17,18 @@ var style = {
 
 class Form extends React.Component{
 
-   handleClick() {
-      this.props.getWeather
-   
-   }
+  onClick = () => {
 
-  
+    this.props.getWeather();
+
+  }
+
   render() {
   return (
       <div  className={classes.Div}>
-      <form onSubmit={this.handleClick}>
+      <form onSubmit={this.onClick}>
         <input type="text" name="city" placeholder="Gdzie się jutro wybierasz?"   className={classes.Form}  />
-        <button style = {style}>Pobierz pogodę</button>
+        <button style = {style} type="submit">Pobierz pogodę</button>
       
       
       </form>

@@ -80,7 +80,7 @@ class BottomNav extends React.Component {
                         </a>
                         </Col>
                         <Col md={2} sm={12} style={margin} >
-                        <a href="/" ><img src={require("../img/pogoda-top.png")} /></a>
+                     
 
                         </Col>
 
