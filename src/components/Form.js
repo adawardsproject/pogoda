@@ -11,12 +11,16 @@ var style = {
   fontSize: "16px",
   fontWeight: "400",
 }
+
 class Form extends React.Component {
 
   onClick = e => {
+ e.preventDefault();
     this.props.getWeather();
-    e.preventDefault();
+  
+   
   }
+    
   render() {
     return (
       <div className={classes.Div}>
