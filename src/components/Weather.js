@@ -37,7 +37,7 @@ class Weather extends React.Component {
         wschod: undefined,
         zachod: undefined,
         error: undefined,
-        temperatureRound:undefined
+        temperatureRound: undefined
     }
 
     getWeather = async (e) => {
@@ -58,21 +58,17 @@ class Weather extends React.Component {
 
         var wind_chill_round = Math.round(wind_chill_1);
 
-
         var wschod = new Date(response.sys.sunrise * 1000);
-
 
         var mainUp = wschod.getHours() + ":" + wschod.getMinutes()
         console.log(mainUp)
 
         var zachod = new Date(response.sys.sunset * 1000);
 
-
         var mainDown = zachod.getHours() + ":" + zachod.getMinutes()
         console.log(mainDown)
 
         var temperatureRound = Math.round(response.main.temp);
-
 
         this.setState({
             temperature: response.main.temp,
@@ -86,11 +82,9 @@ class Weather extends React.Component {
             description: response.weather[0].description,
             temperatureRound: temperatureRound,
             error: ""
-        })
+    })
     }
-  
     render() {
-        
         return (
             <section style={sectionStyle}>
                 <Grid>
@@ -99,8 +93,8 @@ class Weather extends React.Component {
                         </Col>
                         <Col xs={12} md={3}>
                             <Form
-                            getWeather={this.getWeather}
-                           />
+                                getWeather={this.getWeather}
+                            />
                         </Col>
                     </Row>
                     <Row className="show-grid" style={rowStyle}>
@@ -127,35 +121,25 @@ class Weather extends React.Component {
                                 error={this.state.error}
                                 wind_chill={this.state.wind_chill}
                                 temperatureRound={this.state.temperatureRound}
-
                             />
-
                         </Col>
                         <Col xs={12} md={3}>
                             <Tomorrow
-                              
                                 description={this.state.description}
                                 error={this.state.error}
                             />
-
-
                         </Col>
                         <Col xs={12} md={2}>
                             <Overmorrow
-                         
                                 description={this.state.description}
                                 error={this.state.error}
                             />
-
-
                         </Col>
                     </Row>
                 </Grid>
             </section>
         )
     }
-
-
 }
 
 export default Weather;

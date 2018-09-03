@@ -10,34 +10,23 @@ var style = {
   width: "192px",
   fontSize: "16px",
   fontWeight: "400",
-
-
 }
+class Form extends React.Component {
 
-
-class Form extends React.Component{
-
-  onClick = () => {
-
+  onClick = e => {
     this.props.getWeather();
-
+    e.preventDefault();
   }
-
   render() {
-  return (
-      <div  className={classes.Div}>
-      <form onSubmit={this.onClick}>
-        <input type="text" name="city" placeholder="Gdzie się jutro wybierasz?"   className={classes.Form}  />
-        <button style = {style} type="submit">Pobierz pogodę</button>
-      
-      
-      </form>
-      <Compass/>
-    </div>
-      
-
-
-  )
-}
+    return (
+      <div className={classes.Div}>
+        <form onSubmit={this.onClick}>
+          <input type="text" name="city" placeholder="Gdzie się jutro wybierasz?" className={classes.Form} />
+          <button style={style} type="submit">Pobierz pogodę</button>
+        </form>
+        <Compass />
+      </div>
+    )
+  }
 }
 export default Form;
