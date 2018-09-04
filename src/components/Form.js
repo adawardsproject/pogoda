@@ -15,11 +15,10 @@ var style = {
 class Form extends React.Component {
 
   onClick = e => {
- e.preventDefault();
+    e.preventDefault();
     this.props.getWeather();
-  
-   
-  }
+  };
+ 
     
   render() {
     return (

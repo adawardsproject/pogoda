@@ -41,10 +41,11 @@ class Weather extends React.Component {
     }
 
     getWeather = async (e) => {
-
+     
         const city = e.target.elements.city.value;
 
         e.preventDefault();
+
 
         const api_call = await fetch(`http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${Api_Key}&lang=pl&units=metric`);
 
